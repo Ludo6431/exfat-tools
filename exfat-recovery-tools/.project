@@ -28,7 +28,7 @@
 		<link>
 			<name>libexfat</name>
 			<type>2</type>
-			<location>/home/ludo6431/Bureau/exfat/src/exfat-read-only/libexfat</location>
+			<locationURI>PARENT-1-PROJECT_LOC/exfat/trunk/libexfat</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>
