@@ -35,7 +35,7 @@ void action_hashes(FILE *fin, size_t csize, char *foutn) {
 		fprintf(stderr, "can't ftell input file for hashes\n");
 		exit(1);
 	}
-	size_t cend = finsz/csize + (finsz%csize > 0);
+	size_t cend = finsz/csize; // + (finsz%csize > 0); do not hash the last incomplete one
 
 	// init output file
 	FILE *fout = fopen(foutn, "wb+");
