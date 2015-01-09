@@ -25,7 +25,9 @@ int main(int argc, char *argv[]) {
 		exit(1);
 	}
 
-	action_hashes(fin, 512*1024, "file-hashes-patched.txt");
+//	action_hashes(fin, 512*1024, "file-hashes-patched.txt");
+
+	action_mp4chunks(fin);
 
 	fclose(fin);
 
