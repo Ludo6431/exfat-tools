@@ -53,7 +53,7 @@ static int read_atom_level(int fdin, off_t o){
 			return 1;
 		}
 
-		o += sizeof(ah) + be32_to_cpu(ah.sz);
+		o += be32_to_cpu(ah.sz);
 	}while(1);
 
 	return 0;
