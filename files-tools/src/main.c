@@ -10,10 +10,9 @@
 #include <stdlib.h>
 
 #include "files-action-hashes.h"
+#include "files-action-mp4chunks.h"
 
 int main(int argc, char *argv[]) {
-	int ret;
-
 	if (argc < 2) {
 		fprintf(stderr, "Usage:\n\t%s <device or file>\n", argv[0]);
 		exit(1);

@@ -64,7 +64,7 @@ void action_hashes(FILE *fin, size_t csize, char *foutn) {
 		mhash_deinit(td, hash);
 
 		// append hash to output file
-		fprintf(fout, "c#%u;", c);
+		fprintf(fout, "c#%lu;", c);
 		for (int i = 0; i < mhash_get_block_size(MHASH_MD5); i++) {
 			fprintf(fout, "%.2x", hash[i]);
 		}

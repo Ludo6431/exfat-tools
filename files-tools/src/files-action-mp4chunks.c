@@ -91,7 +91,7 @@ static int handle_atom(int fdin, off_t o, int level, atom_header_t *ah){
 	case ATOM_ID_dinf:
 	case ATOM_ID_stbl:
 	case ATOM_ID_edts:
-		read_atom_level(fdin, o + sizeof(*ah), sz - sizeof(*ah), level + 1);
+		errstat = read_atom_level(fdin, o + sizeof(*ah), sz - sizeof(*ah), level + 1);
 		break;
 	default:
 		// TODO
